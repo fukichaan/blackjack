@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blackjack.css') }}">
+</head>
+<body>
+    <h1>Blackjack Game</h1>
+    <div>
+        <h2>Dealer's Hand</h2>
+        <div id="dealer-hand"></div>
+    </div>
+    <div>
+        <h2>Player's Hand</h2>
+        <div id="player-hand"></div>
+    </div>
+    <div>
+        <button id="start-game">Start Game</button>
+        <button id="hit" disabled>Hit</button>
+        <button id="stand" disabled>Stand</button>
+    </div>
+    <h3 id="result"></h3>
+    <script src="{{ url_for('static', filename='js/blackjack.js') }}"></script>
+</body>
+</html>
